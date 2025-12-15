@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Load Test Page</h2>
+    <p>This page has multiple images for load testing.</p>
+    
+    <!-- Multiple image placeholders -->
+    <div id="images"></div>
+    
+    <script>
+        // Generate 50 image placeholders
+        for (let i = 0; i < 50; i++) {
+            document.getElementById('images').innerHTML += 
+                `<img src="https://via.placeholder.com/100x100?text=Image${i}" 
+                      alt="Test Image ${i}" style="margin: 5px;">`;
+        }
+    </script>
+</body>
+</html>
