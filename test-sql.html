@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>SQL Injection Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h2>SQL Injection Test Form</h2>
-    <p>This form simulates a login for security testing.</p>
-    <form>
-        Username: <input type="text" name="user"><br><br>
-        Password: <input type="password" name="pass"><br><br>
-        <button type="submit">Login</button>
-    </form>
-    <p><small>Try: ' OR '1'='1 in username field to test WAF</small></p>
+    <div class="container">
+        <h1>SQL Injection Test Form</h1>
+        <div class="content-box">
+            <p>This form simulates a login for security testing.</p>
+            <form>
+                Username: <input type="text" name="user"><br><br>
+                Password: <input type="password" name="pass"><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p><small>Try: ' OR '1'='1 in username field to test WAF</small></p>
+        </div>
+        <p><a href="index.html">← Back to Home</a></p>
+    </div>
 </body>
 </html>
